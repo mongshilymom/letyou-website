@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LetYou - We Let You Shine Digital</title>
+    
+    <meta name="description" content="LetYou - 대한민국 최고의 웹에이전시. AI 기반 디자인, 0.5초 로딩, 300% 전환율 상승">
+    <meta property="og:title" content="LetYou - We Let You Shine Digital">
+    <meta property="og:image" content="https://letyou.kr/og-image.jpg">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>🚀</text></svg>">
+
     <style>
         * {
             margin: 0;
@@ -410,15 +416,207 @@
                 flex-direction: column;
                 gap: 3rem;
             }
+        
+            /* ===== 7일의 기적 (PROCESS) ===== */
+:root {
+  /* index.html에 이미 --accent가 있으면 그대로 사용됨 */
+  --m7-bg: #0d0d0d;
+  --m7-accent: var(--accent, #FF3E00);
+  --m7-text: #eaeaea;
+  --m7-dim: #999;
+  --m7-card: #121212;
+  --m7-line: rgba(255, 62, 0, 0.5);
+}
+
+.miracle7 {
+  background: var(--m7-bg);
+  color: var(--m7-text);
+  padding: 6rem 1.5rem 8rem;
+}
+
+.m7-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.m7-label {
+  color: var(--m7-accent);
+  letter-spacing: 0.2em;
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+
+.m7-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin-bottom: .5rem;
+}
+
+.m7-desc {
+  color: var(--m7-dim);
+  margin-bottom: 3rem;
+}
+
+.m7-timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+/* central vertical line */
+.m7-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--m7-line), transparent);
+  transform: translateX(-50%);
+}
+
+/* item */
+.m7-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin: 2.25rem 0;
+}
+
+.m7-item.left .m7-card { grid-column: 1 / 2; justify-self: start; }
+.m7-item.left .m7-dot  { grid-column: 2 / 3; justify-self: center; }
+
+.m7-item.right .m7-card { grid-column: 2 / 3; justify-self: end; }
+.m7-item.right .m7-dot  { grid-column: 1 / 2; justify-self: center; }
+
+/* dot */
+.m7-dot {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--m7-accent);
+  box-shadow: 0 0 0 6px #0d0d0d, 0 0 0 10px var(--m7-accent);
+  top: .6rem;
+}
+
+/* card */
+.m7-card {
+  width: min(520px, 88vw);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.75rem 2rem;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.m7-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.m7-step {
+  color: var(--m7-accent);
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin-bottom: .4rem;
+}
+
+.m7-card-title {
+  font-size: 1.35rem;
+  margin-bottom: .4rem;
+}
+
+.m7-card-desc {
+  color: #c8c8c8;
+  line-height: 1.6;
+  font-size: .95rem;
+}
+
+/* scroll-in */
+.m7-item { opacity: 0; transform: translateY(24px); }
+.m7-item.m7-show { opacity: 1; transform: translateY(0); transition: all .6s ease; }
+
+/* responsive */
+@media (max-width: 1024px) {
+  .m7-timeline::before { left: 24px; }
+  .m7-item { grid-template-columns: 48px 1fr; }
+  .m7-item.left .m7-card,
+  .m7-item.right .m7-card { grid-column: 2 / 3; justify-self: start; }
+  .m7-item.left .m7-dot,
+  .m7-item.right .m7-dot { grid-column: 1 / 2; }
+  .m7-dot { left: 0; }
+}
+
+
         }
     </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+<style>
+/* ===== 7일의 기적 (PROCESS) ===== */
+:root {
+  --m7-bg: #0d0d0d;
+  --m7-accent: #FF3E00;
+  --m7-text: #eaeaea;
+  --m7-dim: #999;
+  --m7-card: #121212;
+  --m7-line: rgba(255, 62, 0, 0.5);
+}
+
+.miracle7 { background: var(--m7-bg); color: var(--m7-text); padding: 6rem 1.5rem 8rem; }
+.m7-wrap { max-width: 1100px; margin: 0 auto; }
+.m7-label { color: var(--m7-accent); letter-spacing: 0.2em; font-size: .85rem; font-weight: 700; text-transform: uppercase; margin-bottom: .75rem; }
+.m7-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: .5rem; }
+.m7-desc { color: var(--m7-dim); margin-bottom: 3rem; }
+
+.m7-timeline { position: relative; margin: 2rem 0; padding: 1rem 0; }
+.m7-timeline::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px;
+  background: linear-gradient(180deg, transparent, var(--m7-line), transparent); transform: translateX(-50%); }
+
+.m7-item { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: start; margin: 2.25rem 0;
+  opacity: 0; transform: translateY(24px); }
+.m7-item.m7-show { opacity: 1; transform: translateY(0); transition: all .6s ease; }
+
+.m7-item.left .m7-card { grid-column: 1 / 2; justify-self: start; }
+.m7-item.left .m7-dot  { grid-column: 2 / 3; justify-self: center; }
+.m7-item.right .m7-card { grid-column: 2 / 3; justify-self: end; }
+.m7-item.right .m7-dot  { grid-column: 1 / 2; justify-self: center; }
+
+.m7-dot { position: relative; width: 18px; height: 18px; border-radius: 50%; background: var(--m7-accent);
+  box-shadow: 0 0 0 6px #0d0d0d, 0 0 0 10px var(--m7-accent); top: .6rem; }
+
+.m7-card { width: min(520px, 88vw); background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08); padding: 1.75rem 2rem; transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
+.m7-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.18); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.m7-step { color: var(--m7-accent); font-size: .85rem; font-weight: 800; letter-spacing: .08em; margin-bottom: .4rem; }
+.m7-card-title { font-size: 1.35rem; margin-bottom: .4rem; }
+.m7-card-desc { color: #c8c8c8; line-height: 1.6; font-size: .95rem; }
+
+@media (max-width: 1024px) {
+  .m7-timeline::before { left: 24px; }
+  .m7-item { grid-template-columns: 48px 1fr; }
+  .m7-item.left .m7-card, .m7-item.right .m7-card { grid-column: 2 / 3; justify-self: start; }
+  .m7-item.left .m7-dot, .m7-item.right .m7-dot { grid-column: 1 / 2; }
+  .m7-dot { left: 0; }
+}
+
+</style>
 </head>
 <body>
-    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <div class="logo">LetYou</div>
@@ -431,7 +629,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="particles" id="particles"></div>
         <h1 class="liquid-logo">
@@ -440,7 +637,6 @@
         <p class="tagline">We Let You Shine Digital</p>
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
         <h2 class="section-title fade-in">우리가 만드는 차이</h2>
         <div class="services-grid">
@@ -459,42 +655,40 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section class="portfolio" id="work">
-        <h2 class="section-title fade-in">최근 프로젝트</h2>
+        <h2 class="section-title fade-in">포트폴리오</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item fade-in">
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%23FF3E00' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='white' font-weight='bold'%3ESAMSUNG%3C/text%3E%3C/svg%3E" alt="Samsung Project">
                 <div class="portfolio-overlay">
-                    <h3 class="portfolio-title">Samsung Galaxy Unpacked</h3>
+                    <h3 class="portfolio-title">법률사무소</h3>
                     <p class="portfolio-category">Interactive Product Launch</p>
                 </div>
             </div>
             <div class="portfolio-item fade-in">
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%23000' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='white' font-weight='bold'%3EHYUNDAI%3C/text%3E%3C/svg%3E" alt="Hyundai Project">
                 <div class="portfolio-overlay">
-                    <h3 class="portfolio-title">Hyundai IONIQ</h3>
+                    <h3 class="portfolio-title">펜션</h3>
                     <p class="portfolio-category">E-Commerce Platform</p>
                 </div>
             </div>
             <div class="portfolio-item fade-in">
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%23333' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='white' font-weight='bold'%3ECOUPANG%3C/text%3E%3C/svg%3E" alt="Coupang Project">
                 <div class="portfolio-overlay">
-                    <h3 class="portfolio-title">Coupang Rocket Fresh</h3>
+                    <h3 class="portfolio-title">스타트업</h3>
                     <p class="portfolio-category">Mobile-First Redesign</p>
                 </div>
             </div>
             <div class="portfolio-item fade-in">
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%23FF3E00' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='white' font-weight='bold'%3EKAKAO%3C/text%3E%3C/svg%3E" alt="Kakao Project">
                 <div class="portfolio-overlay">
-                    <h3 class="portfolio-title">KakaoBank</h3>
+                    <h3 class="portfolio-title">스타트업</h3>
                     <p class="portfolio-category">Fintech UX Innovation</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats">
         <div class="stat-item fade-in">
             <span class="stat-number" data-target="127">0</span>
@@ -514,7 +708,60 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- ========================= -->
+<!-- 7일의 기적 (PROCESS) -->
+<!-- ========================= -->
+<section id="process" class="miracle7">
+  <div class="m7-wrap">
+    <p class="m7-label">PROCESS</p>
+    <h2 class="m7-title">7일의 기적</h2>
+    <p class="m7-desc">체계적인 프로세스로 1주 안에 완성합니다</p>
+
+    <div class="m7-timeline">
+      <!-- DAY 1 -->
+      <div class="m7-item right">
+        <span class="m7-dot"></span>
+        <div class="m7-card">
+          <p class="m7-step">DAY 1</p>
+          <h3 class="m7-card-title">전략 수립</h3>
+          <p class="m7-card-desc">비즈니스 분석, 경쟁사 리서치, 목표 설정.</p>
+        </div>
+      </div>
+
+      <!-- DAY 2-3 -->
+      <div class="m7-item left">
+        <span class="m7-dot"></span>
+        <div class="m7-card">
+          <p class="m7-step">DAY 2–3</p>
+          <h3 class="m7-card-title">디자인 & 프로토타입</h3>
+          <p class="m7-card-desc">와이어프레임, UI/UX 디자인, 인터랙티브 프로토타입 제작.</p>
+        </div>
+      </div>
+
+      <!-- DAY 4-6 -->
+      <div class="m7-item right">
+        <span class="m7-dot"></span>
+        <div class="m7-card">
+          <p class="m7-step">DAY 4–6</p>
+          <h3 class="m7-card-title">개발 & 테스트</h3>
+          <p class="m7-card-desc">프론트엔드/백엔드 개발, 기능 구현, 크로스 브라우징 테스트.</p>
+        </div>
+      </div>
+
+      <!-- DAY 7 -->
+      <div class="m7-item left">
+        <span class="m7-dot"></span>
+        <div class="m7-card">
+          <p class="m7-step">DAY 7</p>
+          <h3 class="m7-card-title">최적화 & 런칭</h3>
+          <p class="m7-card-desc">성능 최적화, SEO 세팅, 실서버 배포, 모니터링 시작.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <section class="cta">
         <h2 class="fade-in">Ready to Let You Shine?</h2>
         <a href="#contact" class="cta-button">
@@ -655,5 +902,45 @@
             logoRect = logo.getBoundingClientRect();
         });
     </script>
+    
+    <section id="contact" style="padding: 5rem; background: #000; color: white; text-align: center;">
+        <h2 style="font-size: 3rem; margin-bottom: 2rem;">Let's Talk</h2>
+        <a href="mailto:hello@letyou.kr" style="color: #FF3E00; font-size: 2rem; text-decoration: none;">hello@letyou.kr</a>
+        <p style="margin-top: 1rem;">카카오톡: @letyoustudio</p>
+    </section>
+
+<!-- (선택) 스크롤 애니메이션: body 끝쪽 다른 스크립트들 아래에 붙이기 -->
+<script>
+  const items = document.querySelectorAll('.m7-item');
+  const io = new IntersectionObserver((ents)=>{
+    ents.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('m7-show');
+    });
+  }, { threshold:.2, rootMargin:'0px 0px -10% 0px' });
+  items.forEach(i=>io.observe(i));
+</script>
+
+
+
+
+
+
+<script>
+  // IntersectionObserver for reveal
+  (function() {
+    var items = document.querySelectorAll('.m7-item');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function(el){ el.classList.add('m7-show'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(ents){
+      ents.forEach(function(e){
+        if (e.isIntersecting) e.target.classList.add('m7-show');
+      });
+    }, { threshold: .2, rootMargin: '0px 0px -10% 0px' });
+    items.forEach(function(i){ io.observe(i); });
+  })();
+</script>
+
 </body>
 </html>
